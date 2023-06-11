@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0%;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #fff;
+      font-family: sans-serif;
+    }
+    .site-container {
+      height: 600px;
+      width: 30%;
+      box-shadow: 20px 20px 35px #d0d0d0, -20px -20px 35px #fff;
+    }
+    .container {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      /* text-align: center; */
+    }
+    .inputs {
+      height: 400px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    input {
+      height: 50px;
+      width: 100%;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+    }
+
+    input[type="checkbox"] {
+      height: 15px;
+      width: 15px;
+    }
+    .checkbox {
+      height: 10px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    button {
+      height: 40px;
+      width: 80px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    .checkbox-para {
+      font-size: 0.8rem;
+    }
+  </style>
+  <body>
+    <div class="site-container">
+      <div class="container">
+        <h2>Sign Up</h2>
+        &nbsp; &nbsp;
+        <img src="icon.png" alt="#" class="img" />
+      </div>
+      <div class="inputs">
+        <input
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="First-Name: "
+          required
+        />
+        <br />
+
+        <input type="password" placeholder="Last-Name" required />
+        <br />
+        <input type="email" placeholder="Email: " required />
+        <br />
+        <input type="password" placeholder="Set-Password" required />
+        <br />
+        <input type="password" placeholder="Confirm-Password" required />
+        <br />
+        <div class="checkbox">
+          <input type="checkbox" />
+          <p class="checkbox-para">
+            I accept all <a href="#">Terms of Use</a> and
+            <a href="#"> Privacy Policy</a>
+          </p>
+        </div>
+        <button>Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>

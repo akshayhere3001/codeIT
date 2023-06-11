@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    #para {
+      height: 300px;
+      width: 300px;
+      border: 3px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.2rem;
+      /* overflow: auto; */
+      padding: 2rem;
+    }
+    .paraContainer {
+      display: none;
+    }
+    #header {
+      /* border: 1px solid #333; */
+      width: fit-content;
+      cursor: pointer;
+    }
+    .container {
+      height: auto;
+      width: fit-content;
+      border: 1px solid #333;
+    }
+  </style>
+
+  <body>
+    <div class="container" id="main">
+      <h1 id="header">This is a Heading</h1>
+      <div class="paraContainer" id="divPara">
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          doloremque, magnam amet nam dolorum obcaecati mollitia aliquam
+          repudiandae voluptatem in iste velit neque nulla commodi debitis
+          assumenda repellendus quaerat sunt non, nisi tempora minima sed
+          necessitatibus voluptatibus! Corrupti aliquid quae quisquam sapiente
+          laboriosam architecto quis, aliquam quibusdam est iure aut.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    let header = document.querySelector("#header");
+    let para = document.getElementById("divPara");
+    let main = document.getElementById("main");
+
+    header.addEventListener("mouseenter", () => {
+      para.style.display = "block";
+    });
+
+    main.addEventListener("mouseleave", () => {
+      para.style.display = "none";
+    });
+  </script>
+</html>
